@@ -101,7 +101,7 @@ const Candidate = () => {
           {
             title: 'Delete Candidate',
             onClick: async ({ row }) => {
-              await axiosClient.delete(`${apiRoutes.DeleteCandidate}${row._id}`)
+              await axiosClient.delete(`${apiRoutes.DeleteCandidate}/${row._id}`)
               setRefresh(prev => !prev)
             }
           }
