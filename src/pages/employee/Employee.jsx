@@ -9,15 +9,7 @@ import Avatar from '../../components/Avatar'
 const Employee = () => {
   const [refresh, setRefresh] = useState(true)
 
-  const handleStatusChange = async (id, value) => {
-    try {
-      await axiosClient.patch(apiRoutes.UpdateEmployee + '/' + id, {
-        status: value
-      })
-    } catch (error) {
-      alert(error.message)
-    }
-  }
+
 
   const columns = [
     {
@@ -82,7 +74,7 @@ const Employee = () => {
           {
             title: 'Delete',
             onClick: async ({ row }) => {
-              await axiosClient.delete(`${apiRoutes.DeleteEmployee}${row._id}`)
+              await axiosClient.delete(`${apiRoutes.DeleteEmployee}/${row._id}`)
               setRefresh(prev => !prev)
             }
           }
