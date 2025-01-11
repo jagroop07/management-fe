@@ -1,0 +1,124 @@
+.table-container * {
+  user-select: none;
+}
+
+.table-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-bar-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #6200ea;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.action-button {
+  width: 15px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.action-button svg {
+  color: black !important;
+  fill: black !important;
+}
+
+.action-button-wrapper {
+  position: relative;
+}
+
+.action-button:hover {
+  
+}
+
+.table-wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  min-height: 80vh;
+  padding-bottom: 200px;
+  box-shadow: 0 0 20px -2px gray;
+}
+
+thead th {
+  background: var(--primary);
+  color: white;
+}
+
+.three-dots {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.three-dots .dot {
+  width: 3px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.795);
+  border-radius: 50%;
+}
+
+.action-button-wrapper .popup-menu {
+  width: 150px;
+  top: 100%;
+  right: 0;
+}
+
+.action-button-wrapper .popup-menu .popup-menu-item {
+  width: 100%;
+}
+
+.action-button-wrapper .popup-menu .popup-menu-item:hover {
+  background: rgba(114, 114, 114, 0.678);
+  color: black;
+}

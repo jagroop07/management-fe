@@ -1,0 +1,154 @@
+
+
+.innerContainer {
+  display: flex;
+  box-shadow: 2px 2px 28px 0px rgb(184, 178, 178);
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+
+.leftSection {
+  flex: 1;
+  background-color: #4d007d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dashboardImage {
+  width: 80%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.leftSection h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.leftSection p {
+  line-height: 1.5;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: #4d007d;
+  border-radius: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+
+.rightSection {
+  flex: 1;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.rightSection h3 {
+  margin-block: 2.5rem;
+  font-size: 200% !important;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 0.3rem;
+}
+
+.submitButton {
+  padding-inline: 50px;
+  padding-block: 10px;
+  background-color: #4d007d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #36005a;
+}
+
+.loginLink {
+  margin-top: 1rem;
+  color: #666;
+}
+
+.loginLink a {
+  color: #4d007d;
+  text-decoration: none;
+}
+
+.loginLink a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-height: 700px) {
+  .innerContainer {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+  }
+}
